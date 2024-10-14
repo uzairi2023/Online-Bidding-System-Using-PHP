@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background video</title>
+        <style>
+            #myVid{
+                position: fixed;
+                top: 0; left: 0;
+                width: 100vw; height: 100vh;
+                object-fit: cover;
+                z-index: 1;
+            }
+            #mycontent {
+                position: fixed;
+                top: 0; width: 0;
+                width: 100vw;
+                z-index: 2;
+            }
+            html, body{
+                margin: 0;
+                padding: 0;
+                border: 0;
+
+            }
+        </style>
+    </head>
+    <body>
+        <video id="myVid" src="b.mp4.mp4"
+        autoplay muted loop></video>
+        <div id="mycontent">Hello world</div>
+    </body>
+</html>
